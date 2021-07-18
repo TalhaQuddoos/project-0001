@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>PhonePe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container1">
+        <img src="img/header.png" class="header">
+        <div class="scratch">
+            <div class="scratch1" id="o" onclick="showPopup('box-1')">
+                <img id="box-1-img" src="img/p1.png">
+                <div id="box-1-price" class="scratchbox" style="display:none">
+                    <img src="img/PPP.jpg" width="100%" height="auto">
+                    <p>You won <br> ₹ <span class="prize"></span></p>
+                </div>
+            </div>
+            <div class="scratch2" id="i" onclick="showPopup('box-2')">
+                <img id="box-2-img" src="img/p2.png">
+                <div id="box-2-price" class="scratchbox" style="display:none">
+                    <img src="img/PPP.jpg" width="100%" height="auto">
+                    <p>You won <br> ₹ <span class="prize"></span></p>
+                </div>
+            </div>
+
+        </div>
+        <img src="img/bottom.png" class="bottom">
+    </div>
+    <div class="container2" id="popup" style="display: none;">
+        <div onclick="closePopup()"
+            style="font-size: 18px;color:#fff;width: 30px;height: 30px;padding: 2px;border-radius: 50px;background: #fff;color: #333;text-align: center;font-family:cursive;cursor: pointer; position: fixed;right: 10px;top: 10px;">
+            x</div>
+        <div class="pop" id="pop"></div>
+    </div>
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>
